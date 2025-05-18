@@ -7,10 +7,19 @@
 </head>
 <body>
   <h1>Οι Ιδέες Μου</h1>
-  <button onclick="newIdea()">📝 Νέα Ιδέα</button>
-  <button onclick="setReminder()">⏰ Υπενθύμιση</button>
-  <button onclick="sayOrWrite()">🎤 Πες ή Γράψε</button>
-  <div id="ideas"></div>
+  <div class="login-box">
+    <input type="text" placeholder="Όνομα Χρήστη" id="username" />
+    <input type="password" placeholder="Κωδικός" id="password" />
+    <button onclick="login()">Σύνδεση</button>
+  </div>
+  <div id="app" style="display:none;">
+    <button onclick="newIdea()">📝 Νέα Ιδέα</button>
+    <button onclick="setReminder()">⏰ Υπενθύμιση</button>
+    <button onclick="sayOrWrite()">🎤 Πες ή Γράψε</button>
+    <button onclick="exportIdeas()">📤 Εξαγωγή</button>
+    <div id="ideas"></div>
+    <div id="history" class="admin-section"></div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

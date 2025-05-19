@@ -13,12 +13,19 @@
     <button onclick="login()">Σύνδεση</button>
   </div>
   <div id="app" style="display:none;">
-    <button onclick="newIdea()">📝 Νέα Ιδέα</button>
-    <button onclick="setReminder()">⏰ Υπενθύμιση</button>
-    <button onclick="sayOrWrite()">🎤 Πες ή Γράψε</button>
-    <button onclick="exportIdeas()">📤 Εξαγωγή</button>
+    <div class="nav">
+      <button onclick="newIdea()">➕ Νέα Ιδέα</button>
+      <button onclick="setReminder()">⏰ Υπενθύμιση</button>
+      <button onclick="sayOrWrite()">🎤 Πες ή Γράψε</button>
+      <button onclick="exportIdeas()">📤 Εξαγωγή</button>
+    </div>
     <div id="ideas"></div>
-    <div id="history" class="admin-section"></div>
+    <div id="adminPanel" style="display:none;">
+      <h3>📋 Ιστορικό Ενεργειών</h3>
+      <div id="history"></div>
+      <h3>💬 Feedback Χρηστών</h3>
+      <div id="feedback"></div>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>

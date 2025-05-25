@@ -1,32 +1,29 @@
 
 body {
+  background: #f9f9f9;
   font-family: sans-serif;
-  background-color: #f4f4f4;
-  color: #222;
-  padding: 20px;
   text-align: center;
+  padding: 20px;
 }
-.login-box input {
-  display: block;
-  margin: 10px auto;
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+input {
   padding: 10px;
+  margin: 5px;
   width: 200px;
 }
 button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #0077cc;
-  color: white;
+  padding: 10px;
+  margin: 5px;
+  background: #007bff;
   border: none;
+  color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 #ideas {
   margin-top: 20px;
-}
-.adminPanel {
-  background: #e9e9e9;
-  padding: 15px;
-  margin-top: 20px;
-  border-radius: 10px;
+  text-align: left;
 }

@@ -1,1 +1,28 @@
-<html><body><h1>Οι Ιδέες Μου</h1><p>Πλήρες σύστημα φόρτωσης...</p></body></html>
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Οι Ιδέες Μου</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Οι Ιδέες Μου</h1>
+    <div id="login-section">
+      <input id="username" placeholder="Όνομα χρήστη" />
+      <input id="password" type="password" placeholder="Κωδικός" />
+      <button onclick="login()">Σύνδεση</button>
+    </div>
+    <div id="app-section" style="display:none;">
+      <button onclick="newIdea()">➕ Καταγραφή Ιδέας</button>
+      <button onclick="setReminder()">⏰ Υπενθύμιση</button>
+      <button onclick="exportIdeas()">📤 Εξαγωγή</button>
+      <button onclick="sayOrWrite()">🎤 Πες ή Γράψε</button>
+      <button onclick="sendFeedback()">💬 Feedback</button>
+      <div id="ideas"></div>
+      <div id="history" style="margin-top:20px;"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
